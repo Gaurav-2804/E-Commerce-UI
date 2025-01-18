@@ -7,7 +7,7 @@ import loaderIcon from '../../../../images/loaderIcon.svg';
 import Image from 'next/image';
 
 async function getProductDetails(uuid:any) {
-    const res = await fetch(`http://localhost:8080/client/product/${uuid}`);
+    const res = await fetch(`/client/product/${uuid}`);
     return res.json();
 }
 

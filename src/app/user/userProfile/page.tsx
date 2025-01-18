@@ -73,7 +73,7 @@ const UserProfilePage = () => {
             userId: sessionStorage.getItem("userId"),
         }
         axios
-            .post('http://localhost:8080/user/getProfile', payload, {headers})
+            .post('/user/getProfile', payload, {headers})
             .then((res) => {
                 if(res.data) {
                     const prof = res.data;
@@ -116,7 +116,7 @@ const UserProfilePage = () => {
         }
 
         axios
-            .post('http://localhost:8080/user/insertProfileDetails', payload, {headers})
+            .post('/user/insertProfileDetails', payload, {headers})
             .then((res) => {
                 console.log('profile updated', res.data);
             })

@@ -18,7 +18,7 @@ interface CategoryTypes {
 
 
 async function getCategories() {
-    const res  = await fetch('http://localhost:8080/client/getCategories');
+    const res  = await fetch('/client/getCategories');
     return res.json();
 }
 

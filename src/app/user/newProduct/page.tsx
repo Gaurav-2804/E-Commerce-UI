@@ -52,7 +52,7 @@ const NewProductPage = () => {
             username: sessionStorage.getItem('userId')
         }
         axios
-            .post('http://localhost:8080/user/get',payload)
+            .post('/user/get',payload)
             .then((res) => {
                 console.log("user is:",res.data);
             })
@@ -65,7 +65,7 @@ const NewProductPage = () => {
 
     const getCategories = async () => {
         axios
-            .get('http://localhost:8080/client/getCategories')
+            .get('/client/getCategories')
             .then((res) => {
                 console.log('categories:', res.data);
                 setCategoryList(res.data);
@@ -178,7 +178,7 @@ const NewProductPage = () => {
         }
 
         axios
-            .post('http://localhost:8080/user/insertDetails', formData, {headers})
+            .post('/user/insertDetails', formData, {headers})
             .then((res) => {
                 console.log('inserted details', res.data);
                 setShowPopup(true);

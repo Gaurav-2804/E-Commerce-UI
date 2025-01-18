@@ -33,7 +33,7 @@ export default function UserLayout({
         userId: sessionStorage.getItem('userId')
     }
     axios
-        .post('http://localhost:8080/user/getAllProducts', payload)
+        .post('/user/getAllProducts', payload)
         .then((res) => {
             console.log("user products", res.data);
             setUserProductsData(res.data);

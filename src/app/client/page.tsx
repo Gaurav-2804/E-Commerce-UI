@@ -14,12 +14,12 @@ import { UserTypeContext } from './context/userTypeContext/page';
 import ToastContextPage, { ToastContext } from './context/toastContext/page';
 
 async function getAllProducts() {
-    const res = await fetch('http://localhost:8080/client/getDetails');
+    const res = await fetch('/client/getDetails');
     return res.json();
 }
 
 async function getCarouselImages() {
-    const res = await fetch('http://localhost:8080/client/getCarousels');
+    const res = await fetch('/client/getCarousels');
     return res.json();
 }
 

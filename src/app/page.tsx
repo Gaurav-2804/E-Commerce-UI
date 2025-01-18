@@ -54,7 +54,7 @@ export default function Home() {
     };
 
     axios
-        .post('http://localhost:8080/authenticate', payload)
+        .post('/authenticate', payload)
         .then((res) => {
             const authorizationHeader  = res.headers['authorization'];
             const token = authorizationHeader ? authorizationHeader.substring(7) : '';

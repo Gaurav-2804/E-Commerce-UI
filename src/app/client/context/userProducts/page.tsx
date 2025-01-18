@@ -19,7 +19,7 @@ const UserProductsContextPage = (props:any) => {
             userId: sessionStorage.getItem('userId')
         }
         axios
-            .post('http://localhost:8080/user/getAllProducts', payload)
+            .post('/user/getAllProducts', payload)
             .then((res) => {
                 console.log("user products", res.data);
                 setUserProductsData(res.data);
@@ -32,7 +32,7 @@ const UserProductsContextPage = (props:any) => {
 
     const getAllClientProducts = async () => {
         axios
-            .get('http://localhost:8080/client/getDetails')
+            .get('/client/getDetails')
             .then((res) => {
                 console.log("client products", res.data);
                 setUserProductsData(res.data);
