@@ -1,15 +1,15 @@
 "use client";
 import NavbarPage from "../client/navbar/page";
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import HeaderContextPage from "../client/context/headerContext/page";
+import HeaderContextPage from "../client/contexts/HeaderContext";
 import axios from "axios";
 import { setCookie } from "cookies-next";
-import UserProductsContextPage from "../client/context/userProducts/page";
+import UserProductsContextPage from "../client/contexts/UserProductsContext";
 import '../globals.css';
 import Image from 'next/image';
 
 import loaderIcon from '../../images/loaderIcon.svg';
-import CategoryContextPage from "../client/context/categoryContext/page";
+import CategoryContextPage from "../client/contexts/CategoryContext";
 
 
 interface ProductData {

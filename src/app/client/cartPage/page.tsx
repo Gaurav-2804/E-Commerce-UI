@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext, useEffect, useState } from 'react';
-import { CartContext } from '../context/cartContext/page';
+import { CartContext } from '../contexts/CartContext';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
@@ -9,7 +9,7 @@ import loaderIcon from '../../../images/loaderIcon.svg';
 import removeIcon from '../../../images/removeIcon.svg';
 import deleteIcon from '../../../images/deleteIcon.svg';
 
-import { ProductBillingContext } from '../context/billingDetails/page';
+import { ProductBillingContext } from '../contexts/BillingContext';
 
 interface Product {
     id:number | undefined,

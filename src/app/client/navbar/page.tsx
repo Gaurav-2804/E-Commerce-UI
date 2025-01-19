@@ -4,11 +4,11 @@ import Link from "next/link";
 import { useRouter } from 'next/navigation';
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import '../../globals.css';
-import ContextPage from "../context/cartContext/page";
-import { CategoryTypeContext } from "../context/categoryContext/page";
-import { HeaderContext } from "../context/headerContext/page";
-import { UserProductsSearchContext } from "../context/userProducts/page";
-import { UserTypeContext } from "../context/userTypeContext/page";
+import ContextPage from "../contexts/CartContext";
+import { CategoryTypeContext } from "../contexts/CategoryContext";
+import { HeaderContext } from "../contexts/HeaderContext";
+import { UserProductsSearchContext } from "../contexts/UserProductsContext";
+import { UserTypeContext } from "../contexts/UserTypeContext";
 import HeaderPage from "./header/page";
 
 interface CategoryTypes {
@@ -18,7 +18,7 @@ interface CategoryTypes {
 
 
 async function getCategories() {
-    const res  = await fetch('/client/getCategories');
+    const res  = await fetch('/api/client/getCategories');
     return res.json();
 }
 

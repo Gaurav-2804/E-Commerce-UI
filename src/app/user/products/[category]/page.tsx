@@ -1,5 +1,5 @@
 "use client";
-import { UserProductsSearchContext } from "@/app/client/context/userProducts/page";
+import { UserProductsSearchContext } from "@/app/client/contexts/UserProductsContext";
 import Link from "next/link";
 import { useRouter } from 'next/navigation';
 import Router from 'next/router';
@@ -10,8 +10,8 @@ import loaderIcon from '../../../../images/loaderIcon.svg';
 
 import Image from 'next/image';
 import axios from "axios";
-import { HeaderContext } from "@/app/client/context/headerContext/page";
-import { CategoryTypeContext } from "@/app/client/context/categoryContext/page";
+import { HeaderContext } from "@/app/client/contexts/HeaderContext";
+import { CategoryTypeContext } from "@/app/client/contexts/CategoryContext";
 
 interface CategoryTypeObject {
     key: string;

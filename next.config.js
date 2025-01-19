@@ -3,12 +3,8 @@ const nextConfig = {
     async rewrites() {
         return [
           {
-            source: '/client/:path*',
-            destination: 'https://ecommerce-backend-g3tw.onrender.com/client/:path*',
-          },
-          {
-            source: '/user/:path*',
-            destination: 'https://ecommerce-backend-g3tw.onrender.com/user/:path*',
+            source: '/api/:path*',
+            destination: 'https://ecommerce-backend-g3tw.onrender.com/api/:path*',
           },
           {
             source: '/authenticate/:path*',

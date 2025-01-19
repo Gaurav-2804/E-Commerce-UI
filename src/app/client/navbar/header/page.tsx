@@ -9,13 +9,12 @@ import profileIcon from '../../../../images/profileIcon.svg';
 
 import Link from 'next/link';
 import { useContext, useEffect, useState } from 'react';
-import { CartContext } from '../../context/cartContext/page';
+import { CartContext } from '../../contexts/CartContext';
 import homeIcon from '../../../../images/homeIcon.svg';
 import logoutIcon from '../../../../images/logoutIcon.svg';
-import { HeaderContext } from '../../context/headerContext/page';
-import { UserTypeContext } from '../../context/userTypeContext/page';
+import { HeaderContext } from '../../contexts/HeaderContext';
 import { deleteCookie } from 'cookies-next';
-import { UserProductsSearchContext } from '../../context/userProducts/page';
+import { UserProductsSearchContext } from '../../contexts/UserProductsContext';
 
 interface ProductFilter {
     [productName:string]: string;

@@ -1,11 +1,11 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import BillingContextPage from './context/billingDetails/page';
-import ContextPage from "./context/cartContext/page";
-import CategoryContextPage from './context/categoryContext/page';
-import HeaderContextPage from './context/headerContext/page';
-import ToastContextPage from './context/toastContext/page';
-import UserProductsContextPage from './context/userProducts/page';
+import BillingContextPage from './contexts/BillingContext';
+import ContextPage from "./contexts/CartContext";
+import CategoryContextPage from './contexts/CategoryContext';
+import HeaderContextPage from './contexts/HeaderContext';
+import ToastContextPage from './contexts/ToastContext';
+import UserProductsContextPage from './contexts/UserProductsContext';
 import NavbarPage from "./navbar/page";
 
 export default function ClientLayout({

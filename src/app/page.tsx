@@ -13,7 +13,7 @@ import loaderIcon from '../images/loaderIcon.svg';
 
 import { useForm } from 'react-hook-form';
 import { config } from "process";
-import { UserTypeContext } from "./client/context/userTypeContext/page";
+import { UserTypeContext } from "./client/contexts/UserTypeContext";
 
 export default function Home() {
 

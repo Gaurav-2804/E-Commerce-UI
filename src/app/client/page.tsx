@@ -10,16 +10,16 @@ import dotIcon from '../../images/dotIcon.svg';
 import activeDotIcon from '../../images/activeDotIcon.svg';
 import loaderIcon from '../../images/loaderIcon.svg';
 
-import { UserTypeContext } from './context/userTypeContext/page';
-import ToastContextPage, { ToastContext } from './context/toastContext/page';
+import { UserTypeContext } from './contexts/UserTypeContext';
+import ToastContextPage, { ToastContext } from './contexts/ToastContext';
 
 async function getAllProducts() {
-    const res = await fetch('/client/getDetails');
+    const res = await fetch('/api/client/getDetails');
     return res.json();
 }
 
 async function getCarouselImages() {
-    const res = await fetch('/client/getCarousels');
+    const res = await fetch('/api/client/getCarousels');
     return res.json();
 }
 
@@ -108,7 +108,7 @@ const ClientPage = () => {
 
 
     const showProducts = (
-        <div className="p-4">
+        <div className="w-full p-4">
             {
                 products.map((productFilter,idx) => (
                     <div key={idx}>

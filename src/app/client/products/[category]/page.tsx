@@ -6,11 +6,11 @@ import { useContext, useEffect, useState } from "react";
 
 import Image from 'next/image';
 import axios from "axios";
-import { UserProductsSearchContext } from "../../context/userProducts/page";
-import { HeaderContext } from "../../context/headerContext/page";
+import { UserProductsSearchContext } from "../../contexts/UserProductsContext";
+import { HeaderContext } from "../../contexts/HeaderContext";
 
 import loaderIcon from '../../../../images/loaderIcon.svg';
-import { CategoryTypeContext } from "../../context/categoryContext/page";
+import { CategoryTypeContext } from "../../contexts/CategoryContext";
 
 interface CategoryTypeObject {
     key: string;

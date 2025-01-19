@@ -7,7 +7,7 @@ import loaderIcon from '../../../../images/loaderIcon.svg';
 import Image from 'next/image';
 
 async function getProductDetails(uuid:any) {
-    const res = await fetch(`/client/product/${uuid}`);
+    const res = await fetch(`/api/client/product/${uuid}`);
     return res.json();
 }
 
@@ -75,14 +75,14 @@ const UserProductPage = (query: any) => {
                             <div  className="w-3/4 flex justify-center items-center flex-col">
                                 <div className="cursor-pointer m-2">
                                     <div className="p-2">
-                                        <img src={imageList[selectedImgIndex]} className="max-w-full h-96" alt="" />
+                                        <img src={imageList[selectedImgIndex]} className="max-w-full max-h-96" alt="" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="w-1/2 pl-3">
-                        <div className="h-[80vh] p-8">
+                        <div className="h-[80vh] p-8 overflow-auto">
                             <div className="mb-4">
                                 <section className="font-sans text-2xl antialiased tracking-wide text-slate-950">{productData.productName}</section>
                             </div>

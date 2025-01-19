@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
 import { useForm, useFieldArray, useController, Controller } from 'react-hook-form';
-import { ProductBillingContext } from "../context/billingDetails/page";
+import { ProductBillingContext } from "../contexts/BillingContext";
 
 import successIcon from '../../../images/successIcon.svg';
 

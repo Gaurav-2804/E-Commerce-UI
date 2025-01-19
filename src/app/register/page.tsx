@@ -37,7 +37,7 @@ const RegisterPage: React.FC = () => {
             password: data.password
         };
         axios
-            .post('/user/register', payload)
+            .post('/api/user/register', payload)
             .then((res) => {
                 console.log("user created",res.data);
             })

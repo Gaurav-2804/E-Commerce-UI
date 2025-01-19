@@ -10,8 +10,8 @@ import { useRouter } from 'next/navigation';
 
 import loaderIcon from '../../images/loaderIcon.svg';
 import { UserProductsContext } from "./layout";
-import { UserProductsSearchContext } from "../client/context/userProducts/page";
-import { HeaderContext } from "../client/context/headerContext/page";
+import { UserProductsSearchContext } from "../client/contexts/UserProductsContext";
+import { HeaderContext } from "../client/contexts/HeaderContext";
 
 const UserHomePage = () => {
     const router = useRouter();
