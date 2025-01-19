@@ -1,4 +1,4 @@
-import UserProductsContextPage from "../context/userProducts/page";
+import UserProductsContextPage from "../contexts/UserProductsContext";
 
 export default function NavbarLayout({
     children,
